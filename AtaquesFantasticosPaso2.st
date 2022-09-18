@@ -9,7 +9,7 @@ DenotativeObject subclass: #CombatienteHumanoArthas
 
 !classDefinition: 'CombatienteHumanoArthas class' category: 'AtaquesFantasticosPaso2'!
 CombatienteHumanoArthas class
-	instanceVariableNames: 'enemigos puntosDeVida dañoAInfligir dañoAAbsorber estrategia'!
+	instanceVariableNames: 'enemigos puntosDeVida dañoAInfligir dañoAAbsorber estrategia agilidadIntrinseca'!
 
 !CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'JMB 9/11/2022 12:05:11'!
 atacar
@@ -34,11 +34,12 @@ focalizarEnElMasHerido
 focalizarEnElMasSano
 	estrategia := [:posiblesEnemigosAAtacar | posiblesEnemigosAAtacar detectMax: [:enemigo | enemigo puntosDeVida]].! !
 
-!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'JMB 9/14/2022 00:25:28'!
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/17/2022 21:51:38'!
 prepararseParaElCombate
 	puntosDeVida := 20*pv.
+	agilidadIntrinseca := 1*pv.
 	dañoAInfligir := 2*pv.
-	dañoAAbsorber := 0*pv.
+	dañoAAbsorber := (0*pv) + agilidadIntrinseca.
 	enemigos := #().
 	estrategia := [:posiblesEnemigosAAtacar | posiblesEnemigosAAtacar anyOne ].! !
 
@@ -70,16 +71,22 @@ usarHacha
 	dañoAInfligir := 10*pv.! !
 
 
-!CombatienteHumanoArthas class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/17/2022 20:17:50'!
+!CombatienteHumanoArthas class methodsFor: 'vida' stamp: 'rd 9/17/2022 21:57:51'!
+tienePuntosDeVida: puntosDeVidaEstimados
+	puntosDeVida = puntosDeVidaEstimados ifTrue: [^true] ifFalse: [^false].! !
+
+
+!CombatienteHumanoArthas class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/17/2022 22:00:26'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
-	enemigos := ((Array new: 2) at: 1 put: CombatienteOrcoOlgra; at: 2 put: CombatienteOrcoMankrik; yourself).
+	enemigos := #().
 	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 20; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
 	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 2; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
-	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
-	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteHumanoArthas; instVarAt: 2 put: '[ :argm4_1 |
-	argm4_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).! !
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteHumanoArthas; instVarAt: 2 put: '[ :argm5_1 |
+	argm5_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	agilidadIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).! !
 
 
 !classDefinition: #CombatienteOrcoMankrik category: 'AtaquesFantasticosPaso2'!
@@ -93,7 +100,7 @@ DenotativeObject subclass: #CombatienteOrcoMankrik
 
 !classDefinition: 'CombatienteOrcoMankrik class' category: 'AtaquesFantasticosPaso2'!
 CombatienteOrcoMankrik class
-	instanceVariableNames: 'enemigos puntosDeVida dañoAInfligir dañoAAbsorber estrategia'!
+	instanceVariableNames: 'enemigos puntosDeVida dañoAInfligir dañoAAbsorber estrategia fuerzaIntrinseca'!
 
 !CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'JMB 9/11/2022 12:02:56'!
 atacar
@@ -118,10 +125,11 @@ focalizarEnElMasHerido
 focalizarEnElMasSano
 	estrategia := [:posiblesEnemigosAAtacar | posiblesEnemigosAAtacar detectMax: [:enemigo | enemigo puntosDeVida]].! !
 
-!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'JMB 9/14/2022 00:26:35'!
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/17/2022 21:44:36'!
 prepararseParaElCombate
 	puntosDeVida := 20*pv.
-	dañoAInfligir := 2*pv.
+	fuerzaIntrinseca := 2*pv.
+	dañoAInfligir := (2*pv) + fuerzaIntrinseca.
 	dañoAAbsorber := 0*pv.
 	enemigos := #().
 	estrategia := [:posiblesEnemigosAAtacar | posiblesEnemigosAAtacar anyOne ].! !
@@ -162,17 +170,22 @@ estaHerido
 noEstaHerido
 	puntosDeVida = (20*pv) ifTrue:[^true] ifFalse: [^false].! !
 
+!CombatienteOrcoMankrik class methodsFor: 'vida' stamp: 'rd 9/17/2022 20:42:29'!
+tienePuntosDeVida: puntosDeVidaEstimados
+	puntosDeVidaEstimados = puntosDeVida ifTrue: [^true] ifFalse: [^false].! !
 
-!CombatienteOrcoMankrik class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/17/2022 20:17:50'!
+
+!CombatienteOrcoMankrik class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/17/2022 22:00:26'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
 	enemigos := #().
-	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 20; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
-	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 2; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 10; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 4; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
 	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
-	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoMankrik; instVarAt: 2 put: '[ :argm4_1 |
-	argm4_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).! !
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoMankrik; instVarAt: 2 put: '[ :argm5_1 |
+	argm5_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	fuerzaIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 2; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).! !
 
 
 !classDefinition: #CombatienteOrcoOlgra category: 'AtaquesFantasticosPaso2'!
@@ -186,7 +199,7 @@ DenotativeObject subclass: #CombatienteOrcoOlgra
 
 !classDefinition: 'CombatienteOrcoOlgra class' category: 'AtaquesFantasticosPaso2'!
 CombatienteOrcoOlgra class
-	instanceVariableNames: 'estrategia dañoAAbsorber dañoAInfligir puntosDeVida enemigos estaDistraido'!
+	instanceVariableNames: 'estaDistraido enemigos puntosDeVida dañoAInfligir dañoAAbsorber estrategia fuerzaIntrinseca'!
 
 !CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'JMB 9/11/2022 12:01:58'!
 atacar
@@ -211,10 +224,11 @@ focalizarEnElMasHerido
 focalizarEnElMasSano
 	estrategia := [:posiblesEnemigosAAtacar | posiblesEnemigosAAtacar detectMax: [:enemigo | enemigo puntosDeVida]].! !
 
-!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'JMB 9/14/2022 00:28:26'!
+!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/17/2022 21:35:41'!
 prepararseParaElCombate
 	puntosDeVida := 20*pv.
-	dañoAInfligir := 2*pv.
+	fuerzaIntrinseca := 1*pv.
+	dañoAInfligir := (2*pv) + fuerzaIntrinseca.
 	dañoAAbsorber := 0*pv.
 	enemigos := #().
 	estrategia := [:posiblesEnemigosAAtacar | posiblesEnemigosAAtacar anyOne ].! !
@@ -260,17 +274,18 @@ tienePuntosDeVida: puntosDeVidaEstimados
 	puntosDeVidaEstimados = puntosDeVida ifTrue: [^true] ifFalse: [^false].! !
 
 
-!CombatienteOrcoOlgra class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/17/2022 20:17:50'!
+!CombatienteOrcoOlgra class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/17/2022 22:00:26'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
-	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoOlgra; instVarAt: 2 put: '[ :argm4_1 |
-	argm4_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
-	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
-	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 2; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
-	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 18; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estaDistraido := false.
 	enemigos := #().
-	estaDistraido := false.! !
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 20; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 10; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoOlgra; instVarAt: 2 put: '[ :argm5_1 |
+	argm5_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	fuerzaIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).! !
 
 
 !classDefinition: #CombatientesTest category: 'AtaquesFantasticosPaso2'!
