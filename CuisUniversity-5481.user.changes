@@ -1275,3 +1275,558 @@ initializeCollaboratorsFromFile
 	fuerzaIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).!
 
 ----QUIT----(17 September 2022 22:00:38) CuisUniversity-5481.image priorSource: 7187074!
+
+----STARTUP---- (18 September 2022 18:13:48) as /home/rebeselman/algo3-cfrancavilla-rdavila/CuisUniversity-5481.image!
+
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:23:50'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:23:50'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:23:50'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:23:50'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:23:50'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:23:50'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:23:50'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:23:50'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:23:50'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:23:50'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:23:50'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:31:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:31:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:31:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:31:48'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:31:48'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:31:48'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:31:48'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:31:48'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:31:48'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:31:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:31:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:31:50'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:32:02'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:34:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:34:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:34:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:34:47'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:34:47'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:34:47'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:34:47'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:34:47'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:34:47'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:34:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:34:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:37:34'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:37:34'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:37:34'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:37:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:37:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:37:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:37:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:37:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:37:34'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:37:34'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:37:34'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:38:19'!
+ERROR!
+
+self combatienteOrcoMankrik!
+
+self combatienteOrcoMankrik!
+!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/18/2022 18:40:51' prior: 50556689!
+prepararseParaElCombate
+	puntosDeVida := 20*pv.
+	fuerzaIntrinseca := 1*pv.
+	dañoAInfligir := (2*pv) + (1*pv).
+	dañoAAbsorber := 0*pv.
+	enemigos := #().
+	estrategia := [:posiblesEnemigosAAtacar | posiblesEnemigosAAtacar anyOne ].! !
+!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/18/2022 18:40:57' prior: 50557903!
+prepararseParaElCombate
+	puntosDeVida := 20*pv.
+	fuerzaIntrinseca := 1*pv.
+	dañoAInfligir := (2*pv) + (1*pv).
+	dañoAAbsorber := 0*pv.
+	enemigos := #().
+	estrategia := [:posiblesEnemigosAAtacar | posiblesEnemigosAAtacar anyOne ].! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:12'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:18'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:18'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:18'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:18'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:18'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:18'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:18'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:18'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:18'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:18'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:41:18'!
+PASSED!
+!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/18/2022 18:42:03' prior: 50557914!
+prepararseParaElCombate
+	puntosDeVida := 20*pv.
+	fuerzaIntrinseca := 1*pv.
+	dañoAInfligir := (2*pv) + fuerzaIntrinseca.
+	dañoAAbsorber := 0*pv.
+	enemigos := #().
+	estrategia := [:posiblesEnemigosAAtacar | posiblesEnemigosAAtacar anyOne ].! !
+!CombatienteOrcoOlgra class methodsFor: 'equipo' stamp: 'rd 9/18/2022 18:42:47' prior: 50554334!
+usarHacha
+	dañoAInfligir := 10*pv + fuerzaIntrinseca.! !
+!CombatienteOrcoOlgra class methodsFor: 'equipo' stamp: 'rd 9/18/2022 18:42:59' prior: 50554330!
+usarEspada
+	dañoAInfligir := 8*pv + fuerzaIntrinseca.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:43:08'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:43:08'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:43:08'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:43:08'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:43:08'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:43:08'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:43:08'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:43:08'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:43:08'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:43:08'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:43:08'!
+ERROR!
+!CombatienteOrcoMankrik class methodsFor: 'equipo' stamp: 'rd 9/18/2022 18:43:58' prior: 50554179!
+usarEspada
+	dañoAInfligir := 8*pv + fuerzaIntrinseca.! !
+!CombatienteOrcoMankrik class methodsFor: 'equipo' stamp: 'rd 9/18/2022 18:44:08' prior: 50554183!
+usarHacha
+	dañoAInfligir := 10*pv + fuerzaIntrinseca.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:44:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:44:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:44:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:44:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:44:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:44:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:44:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:44:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:44:13'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:44:13'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:44:13'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:38'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:38'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:38'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:38'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:44'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:48'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:49'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:49'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:49'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:49'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:49'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:49'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:49'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:49'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:45:49'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:49:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:49:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:49:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:49:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:49:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:49:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:49:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:49:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:49:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:49:22'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:49:22'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:51:33'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:51:44'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:52:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:52:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:52:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:52:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:52:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:52:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:52:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:52:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:52:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:52:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:52:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:52:43'!
+ERROR!
+
+self combatienteHumanoArthas!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:56:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:56:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:56:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:56:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:56:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:56:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:56:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:56:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:56:22'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:56:22'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/18/2022 18:56:22'!
+ERROR!
