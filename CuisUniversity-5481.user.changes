@@ -4139,3 +4139,108 @@ initializeCollaboratorsFromFile
 ----SNAPSHOT----(19 September 2022 09:43:26) CuisUniversity-5481.image priorSource: 7342450!
 
 ----QUIT----(19 September 2022 09:43:34) CuisUniversity-5481.image priorSource: 7379274!
+
+----STARTUP---- (19 September 2022 17:24:29) as /home/rebeselman/algo3-cfrancavilla-rdavila/CuisUniversity-5481.image!
+
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:40'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:45'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/19/2022 17:24:45'!
+ERROR!
