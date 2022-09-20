@@ -5924,3 +5924,1374 @@ initializeCollaboratorsFromFile
 ----SNAPSHOT----(19 September 2022 22:05:56) CuisUniversity-5481.image priorSource: 7442462!
 
 ----QUIT----(19 September 2022 22:06:11) CuisUniversity-5481.image priorSource: 7463302!
+
+----STARTUP---- (20 September 2022 07:46:36) as /home/rebeselman/algo3-cfrancavilla-rdavila/CuisUniversity-5481.image!
+
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:30'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:50:31'!
+PASSED!
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 07:51:36' prior: 50561540!
+atacarA: unCombatiente
+	self estaFueraDeCombate ifTrue: [^self].
+	unCombatiente recibirDaño: dañoAInfligir.! !
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 07:52:06' prior: 50558878!
+atacarA: unCombatiente
+	self estaFueraDeCombate ifTrue: [^self].
+	unCombatiente recibirDaño: dañoAInfligir.! !
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 07:52:13' prior: 50564990!
+atacarA: unCombatiente
+	self estaFueraDeCombate ifTrue: [^self].
+	unCombatiente recibirDaño: dañoAInfligir.! !
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 07:52:21' prior: 50564997!
+atacarA: unCombatiente
+	self estaFueraDeCombate ifTrue: [^self].
+	unCombatiente recibirDaño: dañoAInfligir.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:53:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:54:03'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:54:03'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:54:03'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:54:03'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:54:03'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:54:03'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 07:54:03'!
+ERROR!
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:01:35' prior: 50559019!
+enemigos: unConjuntoDeEnemigos
+	"|enemigosNoFueraDeCombate|
+	enemigosNoFueraDeCombate := unConjuntoDeEnemigos reject: [:enemigo | enemigo estaFueraDeCombate]."
+	enemigos := unConjuntoDeEnemigos.
+	! !
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:21:18' prior: 50553980!
+focalizarEnElMasHerido
+	estrategia := [:posiblesEnemigosAAtacar | posiblesEnemigosAAtacar detectMin: [:enemigo | enemigo puntosDeVida]].
+	! !
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:21:47' prior: 50565069!
+enemigos: unConjuntoDeEnemigos
+	"|enemigosNoFueraDeCombate|
+	enemigosNoFueraDeCombate := unConjuntoDeEnemigos reject: [:enemigo | enemigo estaFueraDeCombate]."
+	enemigos := unConjuntoDeEnemigos.
+	! !
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:24:40' prior: 50553962!
+atacar
+	| enemigoElegido  enemigosNoFueraDeCombate|
+	enemigos isEmpty ifTrue: [^self].
+	enemigosNoFueraDeCombate := enemigos reject: [:enemigo | enemigo estaFueraDeCombate].
+	
+	enemigoElegido := estrategia value: enemigosNoFueraDeCombate. 
+	self atacarA: enemigoElegido.! !
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:24:47' prior: 50565097!
+atacar
+	| enemigoElegido  enemigosNoFueraDeCombate|
+	enemigos isEmpty ifTrue: [^self].
+	enemigosNoFueraDeCombate := enemigos reject: [:enemigo | enemigo estaFueraDeCombate].
+	
+	enemigoElegido := estrategia value: enemigosNoFueraDeCombate. 
+	self atacarA: enemigoElegido.! !
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:26:15' prior: 50565109!
+atacar
+	| enemigoElegido  enemigosNoFueraDeCombate|
+	enemigos isEmpty ifTrue: [^self].
+	enemigosNoFueraDeCombate := self detectarEnemigosVivos.
+	enemigoElegido := estrategia value: enemigosNoFueraDeCombate. 
+	self atacarA: enemigoElegido.! !
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:27:04'!
+detectarEnemigosVivos
+	| enemigosVivos |
+	enemigosVivos := enemigos reject: [:enemigo | enemigo estaFueraDeCombate].! !
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:27:30' prior: 50565132!
+detectarEnemigosVivos
+	| enemigosVivos |
+	enemigosVivos := enemigos reject: [:enemigo | enemigo estaFueraDeCombate].
+	^enemigosVivos.! !
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:28:22' prior: 50565121!
+atacar
+	| enemigoElegido  enemigosNoFueraDeCombate|
+
+	enemigos isEmpty ifTrue: [^self].
+	enemigosNoFueraDeCombate := self detectarEnemigosVivos.
+	enemigoElegido := estrategia value: enemigosNoFueraDeCombate. 
+	self atacarA: enemigoElegido.! !
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:28:48' prior: 50565087!
+enemigos: unConjuntoDeEnemigos
+	enemigos := unConjuntoDeEnemigos.
+	! !
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:29:17' prior: 50560024!
+enemigos: unConjuntoDeEnemigos
+	enemigos := unConjuntoDeEnemigos.! !
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:29:56'!
+detectarEnemigosVivos
+	| enemigosVivos |
+	enemigosVivos := enemigos reject: [:enemigo | enemigo estaFueraDeCombate].
+	^enemigosVivos.! !
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:31:01' prior: 50554115!
+atacar
+	| enemigoElegido enemigosVivos|
+	enemigos isEmpty ifTrue: [^self].
+	enemigosVivos := self detectarEnemigosVivos.
+	enemigoElegido := estrategia value: enemigosVivos.
+	self atacarA: enemigoElegido.! !
+!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:31:34' prior: 50558710!
+atacarA: unCombatiente
+	self estaFueraDeCombate ifTrue: [^self].
+	unCombatiente recibirDaño: dañoAInfligir.! !
+!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:32:16'!
+detectarEnemigosVivos
+	| enemigosVivos |
+	enemigosVivos := enemigos reject: [:enemigo | enemigo estaFueraDeCombate].
+	^enemigosVivos.! !
+!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:33:35' prior: 50554267!
+atacar
+	| enemigoElegido enemigosVivos |
+	enemigos isEmpty ifTrue: [^self].
+	enemigosVivos := self detectarEnemigosVivos.
+	enemigoElegido := estrategia value: enemigosVivos.
+	self atacarA: enemigoElegido.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:41'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:33:52'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:12'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:23'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:39:27'!
+ERROR!
+
+self combatienteHumanoArthas!
+
+self combatienteOrcoOlgra!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:40:37'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 08:40:37'!
+ERROR!
+!OrquestadorDeCombates class methodsFor: 'rondas' stamp: 'rd 9/20/2022 08:44:52' prior: 50563813!
+desarrollarDuranteRondas: cantidadDeRondas
+	| contadorDeRondas |
+	contadorDeRondas := 0.
+	[contadorDeRondas < cantidadDeRondas & self noEstanTodosLosBandosFueraDeCombate] whileTrue: [self iniciarUnaRonda . contadorDeRondas := contadorDeRondas + 1].
+	
+	
+	ganador := self detectarResultadoDelCombate.
+	ronda := contadorDeRondas.	
+	^self mostrarResultado.
+	! !
+!OrquestadorDeCombates class methodsFor: 'rondas' stamp: 'rd 9/20/2022 08:50:26' prior: 50565395!
+desarrollarDuranteRondas: cantidadDeRondas
+	| contadorDeRondas |
+	contadorDeRondas := 0.
+	[contadorDeRondas < cantidadDeRondas & self NohayUnBandoGandor] whileTrue: [self iniciarUnaRonda . contadorDeRondas := contadorDeRondas + 1].
+	^resultadoDelCombate.
+	! !
+!OrquestadorDeCombates class methodsFor: 'rondas' stamp: 'rd 9/20/2022 08:50:36' prior: 50565410!
+desarrollarDuranteRondas: cantidadDeRondas
+	| contadorDeRondas |
+	contadorDeRondas := 0.
+	[contadorDeRondas < cantidadDeRondas & self NohayUnBandoGanador] whileTrue: [self iniciarUnaRonda . contadorDeRondas := contadorDeRondas + 1].
+	^resultadoDelCombate.
+	! !
+!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 08:55:25'!
+noHayUnBandoGanador
+	self estanTodosFueraDeCombateEnBando1 ifTrue: [^false].
+	self estanTodosFueraDeCombateEnBando2 ifTrue: [^false].
+	^true.! !
+!OrquestadorDeCombates class methodsFor: 'rondas' stamp: 'rd 9/20/2022 08:56:25' prior: 50565422!
+desarrollarDuranteRondas: cantidadDeRondas
+	| contadorDeRondas |
+	contadorDeRondas := 0.
+	[contadorDeRondas < cantidadDeRondas & self noHayUnBandoGanador] whileTrue: [self iniciarUnaRonda . contadorDeRondas := contadorDeRondas + 1].
+	^resultadoDelCombate.
+	! !
+!OrquestadorDeCombates class methodsFor: 'nil' stamp: 'rd 9/20/2022 09:07:21'!
+estanTodosFueraDeCombateEnBando1
+	bandoDeCombatientes1 do: [:combatienteDeBando1 |  combatienteDeBando1 estaFueraDeCombate ifFalse: [^false]].
+	^true.! !
+!OrquestadorDeCombates class methodsFor: 'nil' stamp: 'rd 9/20/2022 09:07:57'!
+estanTodosFueraDeCombateEnBando2
+	bandoDeCombatientes2 do: [:combatienteDeBando2 |  combatienteDeBando2 estaFueraDeCombate ifFalse: [^false]].
+	^true.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:08:31'!
+ERROR!
+
+!methodRemoval: OrquestadorDeCombates class #mostrarResultado stamp: 'rd 9/20/2022 09:09:15'!
+mostrarResultado
+	^[Transcript show: 'ronda en la que se ganó:'. ronda. 'resultado: '. ganador].
+!
+
+!methodRemoval: OrquestadorDeCombates class #devolverRondaFinalDeCombate stamp: 'rd 9/20/2022 09:09:26'!
+devolverRondaFinalDeCombate
+	^ronda.!
+
+!methodRemoval: OrquestadorDeCombates class #detectarResultadoDelCombate stamp: 'rd 9/20/2022 09:09:34'!
+detectarResultadoDelCombate
+	
+	
+	!
+
+!methodRemoval: OrquestadorDeCombates class #devolverResultadoDeCombate stamp: 'rd 9/20/2022 09:09:42'!
+devolverResultadoDeCombate
+	^ganador.!
+
+!methodRemoval: OrquestadorDeCombates class #noEstanTodosLosBandosFueraDeCombate stamp: 'rd 9/20/2022 09:10:04'!
+noEstanTodosLosBandosFueraDeCombate
+	bandoDeCombatientes1 do: [:combatienteDeBando1 | combatienteDeBando1 estaFueraDeCombate ifFalse: [^true]].
+	bandoDeCombatientes2 do: [:combatienteDeBando2 | combatienteDeBando2 estaFueraDeCombate ifFalse: [^true]].
+	^false.!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:10:45'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:10:45'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:10:45'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:10:45'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:10:45'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:10:45'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:10:45'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:14:02'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:15:35'!
+ERROR!
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:16:24' prior: 50563901!
+assertElResultadoIndicaQueNoHayGanador: resultadoDeUnCombate  alcanzadaLaRonda: unNumeroDeRondaEsperado
+	"resultadoDeUnCombate = self orquestadorDeCombates DevolverResultadoDeCombate & unNumeroDeRondaEsperado = self orquestadorDeCombates DevolverRondaFinalDeCombate ifTrue: [^true] ifFalse: [^false]. "
+	"aca tendría que chequear que el resultado del combate indique que no hay ganador."! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:16:46'!
+ERROR!
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:17:14' prior: 50555082!
+assertElResultadoIndicaQueGanoElBando1: resultadoDeUnCombate alcanzadaLaRonda: unNumeroDeRondaEsperado
+
+	"aca tendría que  revisar que el resultado indica que gano el bando 1"! !
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:17:34' prior: 50565584!
+assertElResultadoIndicaQueGanoElBando1: resultadoDeUnCombate alcanzadaLaRonda: unNumeroDeRondaEsperado
+
+	"aca tendría que  revisar que el resultado indica que gano el bando 1 a la ronda que se recibe por parametro, el resulto lo modelo yo"! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:17:48'!
+ERROR!
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:18:46' prior: 50555092!
+assertElResultadoIndicaQueGanoElBando2: resultadoDeUnCombate alcanzadaLaRonda: unNumeroDeRondaEsperado
+
+	"el resultado que modelo yo debería mostrar que ganó el bando 2 alcanzada la ronda que se me envia por parametro, si es así devuelvo true"! !
+
+!classRenamed: #resultadoDelCombate as: #ResultadoDelCombate stamp: 'rd 9/20/2022 09:19:46'!
+Smalltalk renameClassNamed: #resultadoDelCombate as: #ResultadoDelCombate!
+!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 09:19:47' prior: 50565442!
+desarrollarDuranteRondas: cantidadDeRondas
+	| contadorDeRondas |
+	contadorDeRondas := 0.
+	[contadorDeRondas < cantidadDeRondas & self noHayUnBandoGanador] whileTrue: [self iniciarUnaRonda . contadorDeRondas := contadorDeRondas + 1].
+	^ResultadoDelCombate.
+	! !
+!OrquestadorDeCombates class methodsFor: 'rondas' stamp: 'rd 9/20/2022 09:23:11' prior: 50565625!
+desarrollarDuranteRondas: cantidadDeRondas
+	| contadorDeRondas |
+	contadorDeRondas := 0.
+	[contadorDeRondas < cantidadDeRondas & self noHayUnBandoGanador] whileTrue: [self iniciarUnaRonda . contadorDeRondas := contadorDeRondas + 1].
+	ResultadoDelCombate cantidadDeDuracionEnRondas: contadorDeRondas.
+	^ResultadoDelCombate.
+	! !
+!ResultadoDelCombate class methodsFor: 'nil' stamp: 'rd 9/20/2022 09:24:05'!
+cantidadDeDuracionEnRondas: cantidadDeRondas
+	! !
+!ResultadoDelCombate class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 09:24:42' prior: 50565650!
+cantidadDeDuracionEnRondas: cantidadDeRondas
+	cantidadDeRondasDelCombate := cantidadDeRondas.! !
+!OrquestadorDeCombates class methodsFor: 'rondas' stamp: 'rd 9/20/2022 09:25:15' prior: 50565637!
+desarrollarDuranteRondas: cantidadDeRondas
+	| contadorDeRondas |
+	contadorDeRondas := 0.
+	[contadorDeRondas < cantidadDeRondas & self noHayUnBandoGanador] whileTrue: [self iniciarUnaRonda . contadorDeRondas := contadorDeRondas + 1].
+	ResultadoDelCombate guardarCantidadDeDuracionEnRondas: contadorDeRondas.
+	^ResultadoDelCombate.
+	! !
+!ResultadoDelCombate class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 09:25:36'!
+guardarCantidadDeDuracionEnRondas: cantidadDeRondas
+	cantidadDeRondasDelCombate := cantidadDeRondas.! !
+
+!methodRemoval: ResultadoDelCombate class #cantidadDeDuracionEnRondas: stamp: 'rd 9/20/2022 09:25:44'!
+cantidadDeDuracionEnRondas: cantidadDeRondas
+	cantidadDeRondasDelCombate := cantidadDeRondas.!
+!ResultadoDelCombate class methodsFor: 'nil' stamp: 'rd 9/20/2022 09:27:00'!
+mostrarDuracionEnRondasDelCombate
+	! !
+!ResultadoDelCombate class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 09:27:21' prior: 50565688!
+mostrarDuracionEnRondasDelCombate
+	^cantidadDeRondasDelCombate.! !
+!OrquestadorDeCombates class methodsFor: 'rondas' stamp: 'rd 9/20/2022 09:29:21' prior: 50565662!
+desarrollarDuranteRondas: cantidadDeRondas
+	| contadorDeRondas |
+	contadorDeRondas := 0.
+	[contadorDeRondas < cantidadDeRondas & self noHayUnBandoGanador] whileTrue: [self iniciarUnaRonda . contadorDeRondas := contadorDeRondas + 1].
+	ResultadoDelCombate guardarCantidadDeDuracionEnRondas: contadorDeRondas.
+	ResultadoDelCombate guardarBandoGanador: self detectarBandoGanador.
+	^ResultadoDelCombate.
+	! !
+!OrquestadorDeCombates class methodsFor: 'nil' stamp: 'rd 9/20/2022 09:33:26'!
+detectarBandoGanador
+	self noHayUnBandoGanador ifTrue: [^'Indeterminado'].
+	self estanTodosFueraDeCombateEnBando1 ifTrue: [^'Bando2'].
+	self estanTodosFueraDeCombateEnBando2 ifTrue: [^'Bando1'].! !
+!ResultadoDelCombate class methodsFor: 'nil' stamp: 'rd 9/20/2022 09:34:46'!
+guardarBandoGanador: bandoGanador
+	! !
+!ResultadoDelCombate class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 09:35:14' prior: 50565724!
+guardarBandoGanador: bandoGanador
+	ganadorDelCombate := bandoGanador.
+	
+	! !
+
+ResultadoDelCombate
+	collaboratorNames: 'ganadorDelCombate cantidadDeRondasDelCombate'
+	in: 'AtaquesFantasticosPaso2'!
+
+!classDefinition: 'ResultadoDelCombate class' category: 'AtaquesFantasticosPaso2' stamp: 'rd 9/20/2022 09:35:37'!
+ResultadoDelCombate class
+	instanceVariableNames: 'ganadorDelCombate cantidadDeRondasDelCombate'!
+
+!classDefinition: #ResultadoDelCombate category: 'AtaquesFantasticosPaso2' stamp: 'rd 9/20/2022 09:35:37'!
+DenotativeObject subclass: #ResultadoDelCombate
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'AtaquesFantasticosPaso2'!
+
+!classDefinition: 'ResultadoDelCombate class' category: 'AtaquesFantasticosPaso2' stamp: 'rd 9/20/2022 09:35:37'!
+ResultadoDelCombate class
+	instanceVariableNames: 'ganadorDelCombate cantidadDeRondasDelCombate'!
+!ResultadoDelCombate class methodsFor: 'nil' stamp: 'rd 9/20/2022 09:36:23'!
+mostrarCualBandoGanó
+	^ganadorDelCombate.! !
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:36:53' prior: 50565594!
+assertElResultadoIndicaQueGanoElBando1: resultadoDeUnCombate alcanzadaLaRonda: unNumeroDeRondaEsperado
+
+	"aca tendría que  revisar que el resultado indica que gano el bando 1 a la ronda que se recibe por parametro, el resulto lo modelo yo"
+	! !
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:38:20' prior: 50565765!
+assertElResultadoIndicaQueGanoElBando1: resultadoDeUnCombate alcanzadaLaRonda: unNumeroDeRondaEsperado
+
+	"aca tendría que  revisar que el resultado indica que gano el bando 1 a la ronda que se recibe por parametro, el resulto lo modelo yo"
+	Assert isTrue: resultadoDeUnCombate mostrarQueBandoGanó ! !
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:39:40' prior: 50565777!
+assertElResultadoIndicaQueGanoElBando1: resultadoDeUnCombate alcanzadaLaRonda: unNumeroDeRondaEsperado
+
+	"aca tendría que  revisar que el resultado indica que gano el bando 1 a la ronda que se recibe por parametro, el resulto lo modelo yo"
+	Assert isTrue: resultadoDeUnCombate mostrarCualBandoGanó = 'bando1' & resultadoDeUnCombate mostrarDuracionDeRondasDelCombate ! !
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:40:25' prior: 50565790!
+assertElResultadoIndicaQueGanoElBando1: resultadoDeUnCombate alcanzadaLaRonda: unNumeroDeRondaEsperado
+
+	"aca tendría que  revisar que el resultado indica que gano el bando 1 a la ronda que se recibe por parametro, el resulto lo modelo yo"
+	Assert isTrue: resultadoDeUnCombate mostrarCualBandoGanó = 'bando1' & resultadoDeUnCombate mostrarDuracionEnRondasDelCombate = unNumeroDeRondaEsperado.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:31'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:31'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:46'!
+ERROR!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:40:46'!
+ERROR!
+
+resultadoDeUnCombate mostrarCualBandoGanó!
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:41:28' prior: 50565805!
+assertElResultadoIndicaQueGanoElBando1: resultadoDeUnCombate alcanzadaLaRonda: unNumeroDeRondaEsperado
+
+	"aca tendría que  revisar que el resultado indica que gano el bando 1 a la ronda que se recibe por parametro, el resulto lo modelo yo"
+	Assert isTrue: resultadoDeUnCombate mostrarCualBandoGanó = 'Bando1' & resultadoDeUnCombate mostrarDuracionEnRondasDelCombate = unNumeroDeRondaEsperado.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:37'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:51'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:51'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:51'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:51'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:51'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:41:51'!
+PASSED!
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:43:18' prior: 50565608!
+assertElResultadoIndicaQueGanoElBando2: resultadoDeUnCombate alcanzadaLaRonda: unNumeroDeRondaEsperado
+
+	"el resultado que modelo yo debería mostrar que ganó el bando 2 alcanzada la ronda que se me envia por parametro, si es así devuelvo true"
+	Assert isTrue: resultadoDeUnCombate mostrarCualBandoGanó = 'Bando2' & resultadoDeUnCombate mostrarDuracionEnRondasDelCombate = unNumeroDeRondaEsperado.! !
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:43:37' prior: 50565565!
+assertElResultadoIndicaQueNoHayGanador: resultadoDeUnCombate  alcanzadaLaRonda: unNumeroDeRondaEsperado
+	"resultadoDeUnCombate = self orquestadorDeCombates DevolverResultadoDeCombate & unNumeroDeRondaEsperado = self orquestadorDeCombates DevolverRondaFinalDeCombate ifTrue: [^true] ifFalse: [^false]. "
+	"aca tendría que chequear que el resultado del combate indique que no hay ganador."
+	Assert isTrue: resultadoDeUnCombate mostrarCualBandoGanó = 'Indeterminado' & resultadoDeUnCombate mostrarDuracionEnRondasDelCombate = unNumeroDeRondaEsperado.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:43'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:43:56'!
+PASSED!
+!CombatienteHumanoArthas class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 09:46:17' overrides: 50507908!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	enemigos := ((Array new: 2) at: 1 put: CombatienteOrcoOlgra; at: 2 put: CombatienteOrcoMankrik; yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 7; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 10; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteHumanoArthas; instVarAt: 2 put: '[ :argm0_1 |
+	argm0_1 detectMax: [ :argm0_2 |
+		argm0_2 puntosDeVida ]. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	agilidadIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).! !
+!CombatienteOrcoMankrik class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 09:46:17' overrides: 50507908!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	fuerzaIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 2; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoMankrik; instVarAt: 2 put: '[ :argm6_1 |
+	argm6_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 4; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	enemigos := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
+	estaDistraido := false.! !
+!CombatienteOrcoOlgra class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 09:46:17' overrides: 50507908!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	estaDistraido := false.
+	enemigos := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 3; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoOlgra; instVarAt: 2 put: '[ :argm6_1 |
+	argm6_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	fuerzaIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).! !
+!OrquestadorDeCombates class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 09:46:17' overrides: 50507908!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	ganador := OrquestadorDeCombates.
+	bandoDeCombatientes1 := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
+	bandoDeCombatientes2 := ((Array new: 2) at: 1 put: CombatienteOrcoOlgra; at: 2 put: CombatienteOrcoMankrik; yourself).
+	ronda := 1.! !
+!ResultadoDelCombate class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 09:46:17' overrides: 50507908!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	ganadorDelCombate := 'Bando1'.
+	cantidadDeRondasDelCombate := 4.! !
+
+!methodRemoval: CombatienteHumanoArthas class #initializeCollaboratorsFromFile stamp: 'rd 9/20/2022 09:46:17'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	enemigos := ((Array new: 2) at: 1 put: CombatienteOrcoOlgra; at: 2 put: CombatienteOrcoMankrik; yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 7; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 10; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteHumanoArthas; instVarAt: 2 put: '[ :argm0_1 |
+	argm0_1 detectMax: [ :argm0_2 |
+		argm0_2 puntosDeVida ]. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	agilidadIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).!
+
+!methodRemoval: CombatienteOrcoMankrik class #initializeCollaboratorsFromFile stamp: 'rd 9/20/2022 09:46:17'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	fuerzaIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 2; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoMankrik; instVarAt: 2 put: '[ :argm6_1 |
+	argm6_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 4; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	enemigos := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
+	estaDistraido := false.!
+
+!methodRemoval: CombatienteOrcoOlgra class #initializeCollaboratorsFromFile stamp: 'rd 9/20/2022 09:46:17'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	estaDistraido := false.
+	enemigos := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 3; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoOlgra; instVarAt: 2 put: '[ :argm6_1 |
+	argm6_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	fuerzaIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).!
+
+!methodRemoval: OrquestadorDeCombates class #initializeCollaboratorsFromFile stamp: 'rd 9/20/2022 09:46:17'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	ganador := OrquestadorDeCombates.
+	bandoDeCombatientes1 := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
+	bandoDeCombatientes2 := ((Array new: 2) at: 1 put: CombatienteOrcoOlgra; at: 2 put: CombatienteOrcoMankrik; yourself).
+	ronda := 1.!
+
+!methodRemoval: ResultadoDelCombate class #initializeCollaboratorsFromFile stamp: 'rd 9/20/2022 09:46:17'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	ganadorDelCombate := 'Bando1'.
+	cantidadDeRondasDelCombate := 4.!
+
+----SNAPSHOT----(20 September 2022 09:46:21) CuisUniversity-5481.image priorSource: 7463396!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:46'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:47'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 09:47:47'!
+PASSED!
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 09:54:47' prior: 50560059!
+dejarFueraDeCombateAMankrikConHacha
+	self usarHacha.
+	[CombatienteOrcoMankrik noEstaFueraDeCombate] whileTrue: [self atacarA: CombatienteOrcoMankrik].! !
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 09:54:53' prior: 50566448!
+dejarFueraDeCombateAMankrikConHacha
+	self usarHacha.
+	[CombatienteOrcoMankrik noEstaFueraDeCombate] whileTrue: [self atacarA: CombatienteOrcoMankrik].! !
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 09:56:23' prior: 50565147!
+atacar
+	| enemigoElegido  enemigosNoFueraDeCombate|
+	enemigos isEmpty ifTrue: [^self].
+	enemigosNoFueraDeCombate := self detectarEnemigosVivos.
+	enemigoElegido := estrategia value: enemigosNoFueraDeCombate. 
+	self atacarA: enemigoElegido.! !
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+
+!testRun: #DenotativeObjectTestCase #performRealTest stamp: 'rd 9/20/2022 10:05:23'!
+PASSED!
+!CombatienteHumanoArthas class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33' overrides: 50507908!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	enemigos := ((Array new: 2) at: 1 put: CombatienteOrcoOlgra; at: 2 put: CombatienteOrcoMankrik; yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 2; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteHumanoArthas; instVarAt: 2 put: '[ :argm5_1 |
+	argm5_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	agilidadIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).! !
+!CombatienteOrcoMankrik class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33' overrides: 50507908!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	fuerzaIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 2; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoMankrik; instVarAt: 2 put: '[ :argm6_1 |
+	argm6_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 4; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 20; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	enemigos := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
+	estaDistraido := false.! !
+!CombatienteOrcoOlgra class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33' overrides: 50507908!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	estaDistraido := false.
+	enemigos := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 12; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 3; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoOlgra; instVarAt: 2 put: '[ :argm6_1 |
+	argm6_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	fuerzaIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).! !
+!OrquestadorDeCombates class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33' overrides: 50507908!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	ganador := OrquestadorDeCombates.
+	bandoDeCombatientes1 := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
+	bandoDeCombatientes2 := ((Array new: 2) at: 1 put: CombatienteOrcoOlgra; at: 2 put: CombatienteOrcoMankrik; yourself).
+	ronda := 1.! !
+!ResultadoDelCombate class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33' overrides: 50507908!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	ganadorDelCombate := 'Bando2'.
+	cantidadDeRondasDelCombate := 4.! !
+
+!methodRemoval: CombatienteHumanoArthas class #initializeCollaboratorsFromFile stamp: 'rd 9/20/2022 10:05:33'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	enemigos := ((Array new: 2) at: 1 put: CombatienteOrcoOlgra; at: 2 put: CombatienteOrcoMankrik; yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 2; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteHumanoArthas; instVarAt: 2 put: '[ :argm5_1 |
+	argm5_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	agilidadIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).!
+
+!methodRemoval: CombatienteOrcoMankrik class #initializeCollaboratorsFromFile stamp: 'rd 9/20/2022 10:05:33'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	fuerzaIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 2; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoMankrik; instVarAt: 2 put: '[ :argm6_1 |
+	argm6_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 4; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 20; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	enemigos := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
+	estaDistraido := false.!
+
+!methodRemoval: CombatienteOrcoOlgra class #initializeCollaboratorsFromFile stamp: 'rd 9/20/2022 10:05:33'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	estaDistraido := false.
+	enemigos := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 12; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 3; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoOlgra; instVarAt: 2 put: '[ :argm6_1 |
+	argm6_1 anyOne. ]'; instVarAt: 3 put: #(); yourself) asEvaluable).
+	fuerzaIntrinseca := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).!
+
+!methodRemoval: OrquestadorDeCombates class #initializeCollaboratorsFromFile stamp: 'rd 9/20/2022 10:05:33'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	ganador := OrquestadorDeCombates.
+	bandoDeCombatientes1 := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
+	bandoDeCombatientes2 := ((Array new: 2) at: 1 put: CombatienteOrcoOlgra; at: 2 put: CombatienteOrcoMankrik; yourself).
+	ronda := 1.!
+
+!methodRemoval: ResultadoDelCombate class #initializeCollaboratorsFromFile stamp: 'rd 9/20/2022 10:05:33'!
+initializeCollaboratorsFromFile
+	"Auto generated method for loading purposes - Do not modify it"
+
+	ganadorDelCombate := 'Bando2'.
+	cantidadDeRondasDelCombate := 4.!
+
+----SNAPSHOT----(20 September 2022 10:05:40) CuisUniversity-5481.image priorSource: 7509052!
+
+----QUIT----(20 September 2022 10:05:49) CuisUniversity-5481.image priorSource: 7528531!

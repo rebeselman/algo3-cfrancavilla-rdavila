@@ -11,39 +11,43 @@ DenotativeObject subclass: #CombatienteHumanoArthas
 CombatienteHumanoArthas class
 	instanceVariableNames: 'enemigos puntosDeVida dañoAInfligir dañoAAbsorber estrategia agilidadIntrinseca'!
 
-!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'JMB 9/11/2022 12:05:11'!
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 09:56:23'!
 atacar
-	| enemigoElegido |
+	| enemigoElegido  enemigosNoFueraDeCombate|
 	enemigos isEmpty ifTrue: [^self].
-	enemigoElegido := estrategia value: enemigos.
+	enemigosNoFueraDeCombate := self detectarEnemigosVivos.
+	enemigoElegido := estrategia value: enemigosNoFueraDeCombate. 
 	self atacarA: enemigoElegido.! !
 
-!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/19/2022 09:19:21'!
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 07:51:36'!
 atacarA: unCombatiente
 	self estaFueraDeCombate ifTrue: [^self].
-	"unCombatiente estaDistraido ifTrue: [dañoAInfligir := dañoAInfligir + (2*pv)]."
-	"if unCombatiente fueDañado: unCombatiente despertarDeUnBofatazo."
 	unCombatiente recibirDaño: dañoAInfligir.! !
 
-!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/18/2022 20:39:16'!
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 09:54:53'!
 dejarFueraDeCombateAMankrikConHacha
 	self usarHacha.
 	[CombatienteOrcoMankrik noEstaFueraDeCombate] whileTrue: [self atacarA: CombatienteOrcoMankrik].! !
 
-!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/18/2022 20:04:31'!
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:27:30'!
+detectarEnemigosVivos
+	| enemigosVivos |
+	enemigosVivos := enemigos reject: [:enemigo | enemigo estaFueraDeCombate].
+	^enemigosVivos.! !
+
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:28:48'!
 enemigos: unConjuntoDeEnemigos
-	|enemigosNoFueraDeCombate|
-	enemigosNoFueraDeCombate := unConjuntoDeEnemigos reject: [:enemigo | enemigo estaFueraDeCombate].
-	enemigos := enemigosNoFueraDeCombate.
+	enemigos := unConjuntoDeEnemigos.
 	! !
 
 !CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/18/2022 20:29:44'!
 estaFueraDeCombate
 	puntosDeVida <= 0 ifTrue: [^true] ifFalse: [^false].! !
 
-!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'JMB 9/11/2022 12:05:22'!
+!CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:21:18'!
 focalizarEnElMasHerido
-	estrategia := [:posiblesEnemigosAAtacar | posiblesEnemigosAAtacar detectMin: [:enemigo | enemigo puntosDeVida]].! !
+	estrategia := [:posiblesEnemigosAAtacar | posiblesEnemigosAAtacar detectMin: [:enemigo | enemigo puntosDeVida]].
+	! !
 
 !CombatienteHumanoArthas class methodsFor: 'combate' stamp: 'JMB 9/11/2022 12:05:32'!
 focalizarEnElMasSano
@@ -104,12 +108,12 @@ estaHerido
 	puntosDeVida = (20*pv) ifTrue: [^false] ifFalse: [^true].! !
 
 
-!CombatienteHumanoArthas class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/19/2022 22:05:52'!
+!CombatienteHumanoArthas class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
-	enemigos := ((Array new: 1) at: 1 put: CombatienteOrcoOlgra; yourself).
-	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 18; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	enemigos := ((Array new: 2) at: 1 put: CombatienteOrcoOlgra; at: 2 put: CombatienteOrcoMankrik; yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
 	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 2; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
 	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 1; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
 	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteHumanoArthas; instVarAt: 2 put: '[ :argm5_1 |
@@ -130,28 +134,37 @@ DenotativeObject subclass: #CombatienteOrcoMankrik
 CombatienteOrcoMankrik class
 	instanceVariableNames: 'fuerzaIntrinseca estrategia dañoAAbsorber dañoAInfligir puntosDeVida enemigos estaDistraido'!
 
-!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'JMB 9/11/2022 12:02:56'!
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:31:01'!
 atacar
-	| enemigoElegido |
+	| enemigoElegido enemigosVivos|
 	enemigos isEmpty ifTrue: [^self].
-	enemigoElegido := estrategia value: enemigos.
+	enemigosVivos := self detectarEnemigosVivos.
+	enemigoElegido := estrategia value: enemigosVivos.
 	self atacarA: enemigoElegido.! !
 
-!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/18/2022 19:34:21'!
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 07:52:21'!
 atacarA: unCombatiente
-	puntosDeVida <= 0 ifTrue: [^self].
+	self estaFueraDeCombate ifTrue: [^self].
 	unCombatiente recibirDaño: dañoAInfligir.! !
+
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/19/2022 09:42:36'!
+condicionDeDistraido 
+	estaDistraido := true.! !
 
 !CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/18/2022 20:34:21'!
 dejarFueraDeCombateAArthasConHacha
 	self usarHacha.
 	[CombatienteHumanoArthas noEstaFueraDeCombate] whileTrue: [self atacarA: CombatienteHumanoArthas].! !
 
-!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/18/2022 20:37:45'!
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:29:56'!
+detectarEnemigosVivos
+	| enemigosVivos |
+	enemigosVivos := enemigos reject: [:enemigo | enemigo estaFueraDeCombate].
+	^enemigosVivos.! !
+
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:29:17'!
 enemigos: unConjuntoDeEnemigos
-	|enemigosNoFueraDeCombate|
-	enemigosNoFueraDeCombate := unConjuntoDeEnemigos reject: [:enemigo | enemigo estaFueraDeCombate].
-	enemigos := enemigosNoFueraDeCombate.! !
+	enemigos := unConjuntoDeEnemigos.! !
 
 !CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/19/2022 08:18:34'!
 estaDistraido
@@ -232,12 +245,7 @@ tienePuntosDeVida: puntosDeVidaEstimados
 	puntosDeVidaEstimados = puntosDeVida ifTrue: [^true] ifFalse: [^false].! !
 
 
-!CombatienteOrcoMankrik class methodsFor: 'as yet unclassified' stamp: 'rd 9/19/2022 09:42:36'!
-condicionDeDistraido 
-	estaDistraido := true.! !
-
-
-!CombatienteOrcoMankrik class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/19/2022 22:05:52'!
+!CombatienteOrcoMankrik class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -247,7 +255,7 @@ initializeCollaboratorsFromFile
 	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
 	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 4; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
 	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 20; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
-	enemigos := #().
+	enemigos := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
 	estaDistraido := false.! !
 
 
@@ -264,16 +272,17 @@ DenotativeObject subclass: #CombatienteOrcoOlgra
 CombatienteOrcoOlgra class
 	instanceVariableNames: 'estaDistraido enemigos puntosDeVida dañoAInfligir dañoAAbsorber estrategia fuerzaIntrinseca'!
 
-!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'JMB 9/11/2022 12:01:58'!
+!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:33:35'!
 atacar
-	| enemigoElegido |
+	| enemigoElegido enemigosVivos |
 	enemigos isEmpty ifTrue: [^self].
-	enemigoElegido := estrategia value: enemigos.
+	enemigosVivos := self detectarEnemigosVivos.
+	enemigoElegido := estrategia value: enemigosVivos.
 	self atacarA: enemigoElegido.! !
 
-!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/18/2022 19:16:02'!
+!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:31:34'!
 atacarA: unCombatiente
-	puntosDeVida <= 0 ifTrue: [^self].
+	self estaFueraDeCombate ifTrue: [^self].
 	unCombatiente recibirDaño: dañoAInfligir.! !
 
 !CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/18/2022 20:18:56'!
@@ -284,6 +293,12 @@ dejarFueraDeCombateAMankrikConHacha
 !CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/19/2022 08:14:12'!
 despertarDeUnBofetazo
 	estaDistraido := false.! !
+
+!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:32:16'!
+detectarEnemigosVivos
+	| enemigosVivos |
+	enemigosVivos := enemigos reject: [:enemigo | enemigo estaFueraDeCombate].
+	^enemigosVivos.! !
 
 !CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/18/2022 20:28:08'!
 enemigos: unConjuntoDeEnemigos
@@ -366,13 +381,13 @@ tienePuntosDeVida: puntosDeVidaEstimados
 	puntosDeVidaEstimados = puntosDeVida ifTrue: [^true] ifFalse: [^false].! !
 
 
-!CombatienteOrcoOlgra class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/19/2022 22:05:52'!
+!CombatienteOrcoOlgra class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
 	estaDistraido := false.
 	enemigos := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
-	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 18; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
+	puntosDeVida := (SimpleMeasure basicNew instVarAt: 1 put: 12; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
 	dañoAInfligir := (SimpleMeasure basicNew instVarAt: 1 put: 3; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
 	dañoAAbsorber := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'puntosDeVida'; instVarAt: 2 put: 'puntosDeVidas'; instVarAt: 3 put: 'pv'; yourself); yourself).
 	estrategia := ((SerializableBlockClosure basicNew instVarAt: 1 put: CombatienteOrcoOlgra; instVarAt: 2 put: '[ :argm6_1 |
@@ -879,16 +894,14 @@ DenotativeObject subclass: #OrquestadorDeCombates
 OrquestadorDeCombates class
 	instanceVariableNames: 'ganador bandoDeCombatientes1 bandoDeCombatientes2 ronda'!
 
-!OrquestadorDeCombates class methodsFor: 'rondas' stamp: 'rd 9/19/2022 21:28:48'!
+!OrquestadorDeCombates class methodsFor: 'rondas' stamp: 'rd 9/20/2022 09:29:21'!
 desarrollarDuranteRondas: cantidadDeRondas
 	| contadorDeRondas |
 	contadorDeRondas := 0.
-	[contadorDeRondas <= cantidadDeRondas & self noEstanTodosLosBandosFueraDeCombate] whileTrue: [self iniciarUnaRonda . contadorDeRondas := contadorDeRondas + 1].
-	
-	
-	ganador := self detectarResultadoDelCombate.
-	ronda := contadorDeRondas.	
-	^self mostrarResultado.
+	[contadorDeRondas < cantidadDeRondas & self noHayUnBandoGanador] whileTrue: [self iniciarUnaRonda . contadorDeRondas := contadorDeRondas + 1].
+	ResultadoDelCombate guardarCantidadDeDuracionEnRondas: contadorDeRondas.
+	ResultadoDelCombate guardarBandoGanador: self detectarBandoGanador.
+	^ResultadoDelCombate.
 	! !
 
 
@@ -906,19 +919,21 @@ asignarEnemigosACadaBando
 	bandoDeCombatientes1 do: [:combatienteDeBando1 | combatienteDeBando1 enemigos: bandoDeCombatientes2].
 	bandoDeCombatientes2 do: [:combatienteDeBando2 | combatienteDeBando2 enemigos: bandoDeCombatientes1].! !
 
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'rd 9/19/2022 21:58:23'!
-detectarResultadoDelCombate
-	
-	
-	! !
+!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 09:33:26'!
+detectarBandoGanador
+	self noHayUnBandoGanador ifTrue: [^'Indeterminado'].
+	self estanTodosFueraDeCombateEnBando1 ifTrue: [^'Bando2'].
+	self estanTodosFueraDeCombateEnBando2 ifTrue: [^'Bando1'].! !
 
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'rd 9/19/2022 21:49:26'!
-devolverResultadoDeCombate
-	^ganador.! !
+!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 09:07:21'!
+estanTodosFueraDeCombateEnBando1
+	bandoDeCombatientes1 do: [:combatienteDeBando1 |  combatienteDeBando1 estaFueraDeCombate ifFalse: [^false]].
+	^true.! !
 
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'rd 9/19/2022 21:49:52'!
-devolverRondaFinalDeCombate
-	^ronda.! !
+!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 09:07:57'!
+estanTodosFueraDeCombateEnBando2
+	bandoDeCombatientes2 do: [:combatienteDeBando2 |  combatienteDeBando2 estaFueraDeCombate ifFalse: [^false]].
+	^true.! !
 
 !OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'rd 9/19/2022 20:58:20'!
 iniciarUnaRonda
@@ -926,25 +941,20 @@ iniciarUnaRonda
 	bandoDeCombatientes2 do: [:combatienteDeBando2 | combatienteDeBando2 atacar].
 	! !
 
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'rd 9/19/2022 21:51:50'!
-mostrarResultado
-	^[Transcript show: 'ronda en la que se ganó:'. ronda. 'resultado: '. ganador].
-! !
-
-!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'rd 9/19/2022 21:39:54'!
-noEstanTodosLosBandosFueraDeCombate
-	bandoDeCombatientes1 do: [:combatienteDeBando1 | combatienteDeBando1 estaFueraDeCombate ifFalse: [^true]].
-	bandoDeCombatientes2 do: [:combatienteDeBando2 | combatienteDeBando2 estaFueraDeCombate ifFalse: [^true]].
-	^false.! !
+!OrquestadorDeCombates class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 08:55:25'!
+noHayUnBandoGanador
+	self estanTodosFueraDeCombateEnBando1 ifTrue: [^false].
+	self estanTodosFueraDeCombateEnBando2 ifTrue: [^false].
+	^true.! !
 
 
-!OrquestadorDeCombates class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/19/2022 22:05:52'!
+!OrquestadorDeCombates class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
 	ganador := OrquestadorDeCombates.
 	bandoDeCombatientes1 := ((Array new: 1) at: 1 put: CombatienteHumanoArthas; yourself).
-	bandoDeCombatientes2 := ((Array new: 1) at: 1 put: CombatienteOrcoOlgra; yourself).
+	bandoDeCombatientes2 := ((Array new: 2) at: 1 put: CombatienteOrcoOlgra; at: 2 put: CombatienteOrcoMankrik; yourself).
 	ronda := 1.! !
 
 
@@ -961,19 +971,23 @@ DenotativeObject subclass: #OrquestadorDeCombatesTest
 OrquestadorDeCombatesTest class
 	instanceVariableNames: ''!
 
-!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'JMB 9/14/2022 00:30:51'!
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:41:28'!
 assertElResultadoIndicaQueGanoElBando1: resultadoDeUnCombate alcanzadaLaRonda: unNumeroDeRondaEsperado
 
-	Assert isTrue: false description: 'Reemplazar esto por la implementación correspondiente'! !
+	"aca tendría que  revisar que el resultado indica que gano el bando 1 a la ronda que se recibe por parametro, el resulto lo modelo yo"
+	Assert isTrue: resultadoDeUnCombate mostrarCualBandoGanó = 'Bando1' & resultadoDeUnCombate mostrarDuracionEnRondasDelCombate = unNumeroDeRondaEsperado.! !
 
-!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'JMB 9/14/2022 00:30:59'!
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:43:18'!
 assertElResultadoIndicaQueGanoElBando2: resultadoDeUnCombate alcanzadaLaRonda: unNumeroDeRondaEsperado
 
-	Assert isTrue: false description: 'Reemplazar esto por la implementación correspondiente'! !
+	"el resultado que modelo yo debería mostrar que ganó el bando 2 alcanzada la ronda que se me envia por parametro, si es así devuelvo true"
+	Assert isTrue: resultadoDeUnCombate mostrarCualBandoGanó = 'Bando2' & resultadoDeUnCombate mostrarDuracionEnRondasDelCombate = unNumeroDeRondaEsperado.! !
 
-!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/19/2022 21:48:46'!
+!OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/20/2022 09:43:37'!
 assertElResultadoIndicaQueNoHayGanador: resultadoDeUnCombate  alcanzadaLaRonda: unNumeroDeRondaEsperado
-	resultadoDeUnCombate = self orquestadorDeCombates DevolverResultadoDeCombate & unNumeroDeRondaEsperado = self orquestadorDeCombates DevolverRondaFinalDeCombate ifTrue: [^true] ifFalse: [^false]. ! !
+	"resultadoDeUnCombate = self orquestadorDeCombates DevolverResultadoDeCombate & unNumeroDeRondaEsperado = self orquestadorDeCombates DevolverRondaFinalDeCombate ifTrue: [^true] ifFalse: [^false]. "
+	"aca tendría que chequear que el resultado del combate indique que no hay ganador."
+	Assert isTrue: resultadoDeUnCombate mostrarCualBandoGanó = 'Indeterminado' & resultadoDeUnCombate mostrarDuracionEnRondasDelCombate = unNumeroDeRondaEsperado.! !
 
 !OrquestadorDeCombatesTest class methodsFor: 'para completar' stamp: 'rd 9/19/2022 19:18:45'!
 establecerCombateEntreBando1: unBando1 contraBando2: unBando2
@@ -1221,8 +1235,8 @@ desarrollarDuranteRondas: aSmallInteger
 	self shouldBeImplemented.! !
 
 
-!classDefinition: #resultadoDelCombate category: 'AtaquesFantasticosPaso2'!
-DenotativeObject subclass: #resultadoDelCombate
+!classDefinition: #ResultadoDelCombate category: 'AtaquesFantasticosPaso2'!
+DenotativeObject subclass: #ResultadoDelCombate
 	instanceVariableNames: ''
 	classVariableNames: ''
 	poolDictionaries: ''
@@ -1230,21 +1244,39 @@ DenotativeObject subclass: #resultadoDelCombate
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
-!classDefinition: 'resultadoDelCombate class' category: 'AtaquesFantasticosPaso2'!
-resultadoDelCombate class
-	instanceVariableNames: 'ganadorDelCombate perdedorDelCombate cantidadDeRondasDelCombate'!
+!classDefinition: 'ResultadoDelCombate class' category: 'AtaquesFantasticosPaso2'!
+ResultadoDelCombate class
+	instanceVariableNames: 'ganadorDelCombate cantidadDeRondasDelCombate'!
 
-!resultadoDelCombate class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/19/2022 22:05:52'!
+!ResultadoDelCombate class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 09:35:14'!
+guardarBandoGanador: bandoGanador
+	ganadorDelCombate := bandoGanador.
+	
+	! !
+
+!ResultadoDelCombate class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 09:25:36'!
+guardarCantidadDeDuracionEnRondas: cantidadDeRondas
+	cantidadDeRondasDelCombate := cantidadDeRondas.! !
+
+!ResultadoDelCombate class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 09:36:23'!
+mostrarCualBandoGanó
+	^ganadorDelCombate.! !
+
+!ResultadoDelCombate class methodsFor: 'as yet unclassified' stamp: 'rd 9/20/2022 09:27:21'!
+mostrarDuracionEnRondasDelCombate
+	^cantidadDeRondasDelCombate.! !
+
+
+!ResultadoDelCombate class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
-	ganadorDelCombate := nil.
-	perdedorDelCombate := nil.
-	cantidadDeRondasDelCombate := nil.! !
+	ganadorDelCombate := 'Bando2'.
+	cantidadDeRondasDelCombate := 4.! !
 
 CombatienteHumanoArthas initializeAfterFileIn!
 CombatienteOrcoMankrik initializeAfterFileIn!
 CombatienteOrcoOlgra initializeAfterFileIn!
 CombatientesTest initialize!
 OrquestadorDeCombates initializeAfterFileIn!
-resultadoDelCombate initializeAfterFileIn!
+ResultadoDelCombate initializeAfterFileIn!
