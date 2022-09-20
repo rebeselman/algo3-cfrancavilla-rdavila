@@ -108,7 +108,7 @@ estaHerido
 	puntosDeVida = (20*pv) ifTrue: [^false] ifFalse: [^true].! !
 
 
-!CombatienteHumanoArthas class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33'!
+!CombatienteHumanoArthas class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:01:24'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -155,6 +155,10 @@ condicionDeDistraido
 dejarFueraDeCombateAArthasConHacha
 	self usarHacha.
 	[CombatienteHumanoArthas noEstaFueraDeCombate] whileTrue: [self atacarA: CombatienteHumanoArthas].! !
+
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 13:59:41'!
+despertarDeUnBofetazo
+	estaDistraido := false.! !
 
 !CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 08:29:56'!
 detectarEnemigosVivos
@@ -204,13 +208,13 @@ prepararseParaElCombate
 puntosDeVida
 	^puntosDeVida! !
 
-!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/19/2022 09:41:52'!
+!CombatienteOrcoMankrik class methodsFor: 'combate' stamp: 'rd 9/20/2022 13:58:59'!
 recibirDaño:  unaCantidadDeDaño
 	| dañoADescontar |
 	dañoADescontar := (unaCantidadDeDaño - dañoAAbsorber) max: 0*pv.
 	
 	dañoADescontar = 0 ifTrue: [self condicionDeDistraido].
-	(dañoADescontar > 0) & (self estaDistraido) ifTrue: [dañoADescontar := dañoADescontar + (2*pv)].
+	(dañoADescontar > 0) & (self estaDistraido) ifTrue: [dañoADescontar := dañoADescontar + (2*pv). self despertarDeUnBofetazo].
 	
 	puntosDeVida := puntosDeVida - dañoADescontar.! !
 
@@ -245,7 +249,7 @@ tienePuntosDeVida: puntosDeVidaEstimados
 	puntosDeVidaEstimados = puntosDeVida ifTrue: [^true] ifFalse: [^false].! !
 
 
-!CombatienteOrcoMankrik class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33'!
+!CombatienteOrcoMankrik class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:01:24'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -290,7 +294,7 @@ dejarFueraDeCombateAMankrikConHacha
 	self usarHacha.
 	[CombatienteOrcoMankrik noEstaFueraDeCombate] whileTrue: [self atacarA: CombatienteOrcoMankrik].! !
 
-!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/19/2022 08:14:12'!
+!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/20/2022 14:00:20'!
 despertarDeUnBofetazo
 	estaDistraido := false.! !
 
@@ -336,13 +340,13 @@ prepararseParaElCombate
 puntosDeVida
 	^puntosDeVida! !
 
-!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/19/2022 09:40:06'!
+!CombatienteOrcoOlgra class methodsFor: 'combate' stamp: 'rd 9/20/2022 14:00:39'!
 recibirDaño:  unaCantidadDeDaño
 	| dañoADescontar |
 	dañoADescontar := (unaCantidadDeDaño - dañoAAbsorber) max: 0*pv.
 	
 	dañoADescontar = 0 ifTrue: [self condicionDeDistraido].
-	(dañoADescontar > 0) & (self estaDistraido) ifTrue: [dañoADescontar := dañoADescontar + (2*pv)].
+	(dañoADescontar > 0) & (self estaDistraido) ifTrue: [dañoADescontar := dañoADescontar + (2*pv). self despertarDeUnBofetazo].
 	
 	puntosDeVida := puntosDeVida - dañoADescontar.! !
 
@@ -381,7 +385,7 @@ tienePuntosDeVida: puntosDeVidaEstimados
 	puntosDeVidaEstimados = puntosDeVida ifTrue: [^true] ifFalse: [^false].! !
 
 
-!CombatienteOrcoOlgra class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33'!
+!CombatienteOrcoOlgra class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:01:24'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -948,7 +952,7 @@ noHayUnBandoGanador
 	^true.! !
 
 
-!OrquestadorDeCombates class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33'!
+!OrquestadorDeCombates class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:01:24'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -1267,7 +1271,7 @@ mostrarDuracionEnRondasDelCombate
 	^cantidadDeRondasDelCombate.! !
 
 
-!ResultadoDelCombate class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 10:05:33'!
+!ResultadoDelCombate class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:01:24'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
