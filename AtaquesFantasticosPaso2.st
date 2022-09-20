@@ -108,7 +108,7 @@ estaHerido
 	puntosDeVida = (20*pv) ifTrue: [^false] ifFalse: [^true].! !
 
 
-!CombatienteHumanoArthas class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:01:24'!
+!CombatienteHumanoArthas class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:25:58'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -249,7 +249,7 @@ tienePuntosDeVida: puntosDeVidaEstimados
 	puntosDeVidaEstimados = puntosDeVida ifTrue: [^true] ifFalse: [^false].! !
 
 
-!CombatienteOrcoMankrik class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:01:24'!
+!CombatienteOrcoMankrik class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:25:58'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -385,7 +385,7 @@ tienePuntosDeVida: puntosDeVidaEstimados
 	puntosDeVidaEstimados = puntosDeVida ifTrue: [^true] ifFalse: [^false].! !
 
 
-!CombatienteOrcoOlgra class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:01:24'!
+!CombatienteOrcoOlgra class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:25:58'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -952,7 +952,7 @@ noHayUnBandoGanador
 	^true.! !
 
 
-!OrquestadorDeCombates class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:01:24'!
+!OrquestadorDeCombates class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:25:58'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -1271,7 +1271,7 @@ mostrarDuracionEnRondasDelCombate
 	^cantidadDeRondasDelCombate.! !
 
 
-!ResultadoDelCombate class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:01:24'!
+!ResultadoDelCombate class methodsFor: '--** private fileout/in **--' stamp: 'rd 9/20/2022 14:25:58'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
