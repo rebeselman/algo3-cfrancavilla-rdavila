@@ -1,0 +1,1 @@
+1. En nuestro caso nos dimos cuenta de que esa abstracción era un ente que contaba el tiempo en el que evaluaba el respectivo bloque, entonces creamos un mensaje que
