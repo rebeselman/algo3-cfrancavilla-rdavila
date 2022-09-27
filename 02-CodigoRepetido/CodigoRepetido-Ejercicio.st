@@ -195,21 +195,25 @@ numberOfSuspendedCustomers
 	
 	^suspended size! !
 
-!CustomerBook methodsFor: 'customer management' stamp: 'rd 9/26/2022 15:33:49'!
-aulMcCartney] timeLimit: 100.
+!CustomerBook methodsFor: 'customer management' stamp: 'rd 9/27/2022 16:13:45'!
+removeCustomerNamed: aName
+	| aGroupOfCustomers |
+	(active includes: aName) ifTrue: [aGroupOfCustomers := active] ifFalse: [ aGroupOfCustomers := suspended].
+	aGroupOfCustomers remove: aName ifAbsent: [^ NotFound signal].
+	
 ! !
 
-!CustomerBook methodsFor: 'customer management' stamp: 'HernanWilkinson 7/6/2011 17:52'!
+!CustomerBook methodsFor: 'customer management' stamp: 'rd 9/27/2022 16:06:17'!
 signalCustomerAlreadyExists 
 
 	self error: self class customerAlreadyExistsErrorMessage! !
 
-!CustomerBook methodsFor: 'customer management' stamp: 'HernanWilkinson 7/6/2011 17:51'!
+!CustomerBook methodsFor: 'customer management' stamp: 'rd 9/27/2022 16:06:31'!
 signalCustomerNameCannotBeEmpty 
 
 	self error: self class customerCanNotBeEmptyErrorMessage ! !
 
-!CustomerBook methodsFor: 'customer management' stamp: 'NR 4/3/2019 10:14:26'!
+!CustomerBook methodsFor: 'customer management' stamp: 'rd 9/27/2022 16:06:42'!
 suspendCustomerNamed: aName 
 	
 	(active includes: aName) ifFalse: [^CantSuspend signal].
@@ -225,12 +229,12 @@ suspendCustomerNamed: aName
 CustomerBook class
 	instanceVariableNames: ''!
 
-!CustomerBook class methodsFor: 'error messages' stamp: 'NR 4/30/2020 09:05:18'!
+!CustomerBook class methodsFor: 'as yet unclassified' stamp: 'rd 9/27/2022 16:07:10'!
 customerAlreadyExistsErrorMessage
 
 	^'Customer Already Exists'! !
 
-!CustomerBook class methodsFor: 'error messages' stamp: 'NR 4/30/2020 09:05:25'!
+!CustomerBook class methodsFor: 'as yet unclassified' stamp: 'rd 9/27/2022 16:07:24'!
 customerCanNotBeEmptyErrorMessage
 
 	^'Customer Name Cannot Be Empty'! !
