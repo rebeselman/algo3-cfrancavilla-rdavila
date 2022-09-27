@@ -1,0 +1,9 @@
+1. En nuestro caso nos dimos cuenta de que esa abstracción era un ente que contaba el tiempo en el que evaluaba el respectivo bloque, entonces creamos un mensaje que
+dado un closure a ejecutar contara cuantos 'milisegundos' tardaba el mismo en ejecutarse. Si queremos pensar en un ente de la realidad que modelamos podría ser un cronómetro.
+
+2. Para representar entes de la realidad en Smalltalk utilizamos objetos, especificamente, clases e instancias. Los mensajes que estos responden definen el comportamiento de
+dichos entes de la realidad.
+
+3. La relación que nosotras encontramos entre sacar código repetido creando abstracciones y la teoría del modelo del paper de Naur es que cuando un programador quita el código 
+repetido transformandolo en otro objeto que pueda ser usado por múltiples entes, sin necesidad de reescribir algo que ya fue escrito, el programador esta creando algo que podriamos
+comparar con una teoría. El programador puede responder a otros preguntas sobre esta abstracción y otros pueden hacer uso de la misma basandose en las explicaciones recibidas.
