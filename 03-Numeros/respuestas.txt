@@ -1,0 +1,21 @@
+Aporte de los mensajes de DD
+En un double dispatch (DD), ¿qué información aporta cada uno de los dos llamados?
+En un double dispatch cada llamado aporta cómo debe responderse cada mensaje polimórfico dependiendo del tipo de objeto. El ¨que¨ va a ser el mismo en ambos casos, pero cambia la
+implementación de cada método ya que al cambiar el tipo de objeto esta también debe cambiar para su correcto funcionamiento.
+
+Lógica de instanciado
+Con lo que vieron y saben hasta ahora, ¿donde les parece mejor tener la lógica de cómo instanciar un objeto? ¿por qué? ¿Y si se crea ese objeto desde diferentes lugares y de diferentes formas? ¿cómo lo resuelven?
+Creemos que la lógica de cómo instanciar un objeto debería estar en una categoría de mensajes de las instancias en alguna subclase que integre a todos las subsubclases que se inicialicen de determinada forma, por ejemplo en la subclase Entero y Fraccion se inicializaban las instancias de distinta forma, entonces tenían distintos mensajes de inicialización (no eran polimórficos). Si se crea el objeto de distintas formas, creemos que se debería hacer justamente esto, se debería primero crear una jerarquía dependediendo del tipo, y el mensaje #initialize sería polimórmico porque cada objeto es distinto entonces la implementación para cada tipo es distinta, entonces en la subclase se debería colocar "subclassresponsibility" y que cada clase determine la implementación de este. Y si pasa que la inicialización es muy distinta como con Fraccion y Entero, se debería hacer dos mensajes distintos de inicialización.
+ 
+
+Nombres de las categorías de métodos
+Con lo que vieron y trabajaron hasta ahora, ¿qué criterio están usando para categorizar métodos?
+Detectamos una característica en común y los agrupamos en base a eso.
+
+Subclass Responsibility
+Si todas las subclases saben responder un mismo mensaje, ¿por qué ponemos ese mensaje sólo con un “self subclassResponsibility” en la superclase? ¿para qué sirve?
+Ponemos ese mensaje con solo "self subclassResponsibility" en la superclase para definir a ese mensaje polimórfico como abstracto (y darle la responsabilidad de la implementación a las subclases), ya que la forma en la que cada subclase responde a él es distinta porque son clases distintas.
+
+No rompas
+¿Por qué está mal/qué problemas trae romper encapsulamiento?
+Romper el encapsulamiento hace que los métodos de los mensajes dependan de las características internas de otros objetos, y eso complejiza el código y lo hace menos legible. Otro problema es que si yo cambio algo interno de ese objeto (tal vez sus colaboradores internos) tengo que hacer ese cambio en otros objetos y eso hace más difíciles los cambios.
