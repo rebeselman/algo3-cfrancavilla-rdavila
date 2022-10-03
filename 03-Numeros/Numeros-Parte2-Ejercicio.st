@@ -856,9 +856,9 @@ initializeWith: aDividend over: aDivisor
 FraccionNegativa class
 	instanceVariableNames: ''!
 
-!FraccionNegativa class methodsFor: 'as yet unclassified' stamp: 'rd 10/3/2022 12:39:16'!
+!FraccionNegativa class methodsFor: 'as yet unclassified' stamp: 'rd 10/3/2022 13:04:50'!
 isMyTypeaDividend: aDividend aDivisor: aDivisor
-	^aDivisor isNegative or: [aDividend isNegative].
+	^(aDivisor isPositive and: [aDividend isNegative]) or: (aDivisor isNegative and:[aDividend isPositive]).
 	! !
 
 
