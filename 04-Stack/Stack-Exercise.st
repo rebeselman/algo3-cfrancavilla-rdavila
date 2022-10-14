@@ -89,66 +89,65 @@ test07TopDoesNotRemoveObjectFromStack
 	self assert: 1 equals: stack size.
 	! !
 
-!OOStackTest methodsFor: 'test' stamp: 'JMB 10/8/2022 17:58:44'!
+!OOStackTest methodsFor: 'test' stamp: 'RD 10/14/2022 08:23:18'!
 test08CanNotPopWhenThereAreNoObjectsInTheStack
 
 	| stack  |
 	
 	stack := OOStack new.
-	self
-		should: [ stack pop ]
-		raise: Error - MessageNotUnderstood 
-		withExceptionDo: [ :anError |
-			self assert: OOStack stackEmptyErrorDescription equals: anError messageText ]
 		
-! !
+	self blockToFail: [stack pop ] assertError: [ :anError |
+			self assert: OOStack stackEmptyErrorDescription equals: anError messageText ].! !
 
-!OOStackTest methodsFor: 'test' stamp: 'JMB 10/8/2022 17:58:56'!
+!OOStackTest methodsFor: 'test' stamp: 'RD 10/14/2022 08:24:56'!
 test09CanNotPopWhenThereAreNoObjectsInTheStackAndTheStackHadObjects
 
 	| stack  |
 	
 	stack := OOStack new.
 	stack push: 'something'.
-	stack pop.
-	
-	self
-		should: [ stack pop ]
-		raise: Error - MessageNotUnderstood 
-		withExceptionDo: [ :anError |
-			self assert: OOStack stackEmptyErrorDescription equals: anError messageText ]
-		
-! !
+	stack pop.	
+	self blockToFail: [ stack pop ] assertError: [ :anError |
+			self assert: OOStack stackEmptyErrorDescription equals: anError messageText ].! !
 
-!OOStackTest methodsFor: 'test' stamp: 'JMB 10/8/2022 17:59:07'!
+!OOStackTest methodsFor: 'test' stamp: 'RD 10/14/2022 08:25:38'!
 test10CanNotTopWhenThereAreNoObjectsInTheStack
 
 	| stack  |
 	
 	stack := OOStack new.
-	self
-		should: [ stack top ]
-		raise: Error - MessageNotUnderstood 
-		withExceptionDo: [ :anError |
-			self assert: OOStack stackEmptyErrorDescription equals: anError messageText ]
-		
-! !
+
+	self blockToFail: [ stack top ] assertError:  [ :anError |
+			self assert: OOStack stackEmptyErrorDescription equals: anError messageText ].! !
+
+
+!OOStackTest methodsFor: 'auxiliar' stamp: 'RD 10/14/2022 08:23:51'!
+blockToFail: aBlockThatIsGonnaFail assertError: aBlockThatAssertsTheError
+	self 
+		should: aBlockThatIsGonnaFail 
+		raise: Error
+		withExceptionDo: aBlockThatAssertsTheError.! !
 
 
 !classDefinition: #SentenceFinderByPrefixTest category: 'Stack-Exercise'!
 TestCase subclass: #SentenceFinderByPrefixTest
-	instanceVariableNames: ''
+	instanceVariableNames: 'finder aCollectionOfNamesSimilarToGreta aCollectionOfTwoRandomNames'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'cc 10/11/2022 21:43:06'!
+!SentenceFinderByPrefixTest methodsFor: 'testing' stamp: 'RD 10/13/2022 18:29:11'!
+setUp
+	finder := SentenceFinderByPrefix new.
+	aCollectionOfNamesSimilarToGreta :=  {	'Gret'. 'GretaLinda'. 'Greta'. 'GretaThumberg'. 'GretaBella'.}.
+	aCollectionOfTwoRandomNames := {'Mary'. 'Steven'.}! !
+
+!SentenceFinderByPrefixTest methodsFor: 'testing' stamp: 'RD 10/13/2022 17:42:20'!
 test01SearchingInAnStackShouldReturnAnCollectionWithACorrectSize
-	| stack finder result| 
+	| stack result| 
 	
 	stack := OOStack new.
-	
-	finder := SentenceFinderByPrefix new.
+
 	stack push: 'Gret'.
 	stack push: 'GretaLinda'.
 	
@@ -157,22 +156,112 @@ test01SearchingInAnStackShouldReturnAnCollectionWithACorrectSize
 	self deny: result isEmpty. 
 	self assert: 1 equals: (result size). ! !
 
-!SentenceFinderByPrefixTest methodsFor: 'as yet unclassified' stamp: 'cc 10/11/2022 21:31:39'!
+!SentenceFinderByPrefixTest methodsFor: 'testing' stamp: 'RD 10/13/2022 17:42:30'!
 test02SearchingInAnEmptyStackShouldReturnAnEmptyCollection
-	| stack finder result| 
+	| stack result| 
 	
 	stack := OOStack new.
-	
-	finder := SentenceFinderByPrefix new.
 	
 	result := finder find: 'Greta' in: stack.
 	
 	self assert: result isEmpty. ! !
 
+!SentenceFinderByPrefixTest methodsFor: 'testing' stamp: 'RD 10/13/2022 18:30:51'!
+test03SearchingAPrefixThatIsNotIntoTheStackShouldReturnAnEmptyCollection
+	| stack result| 
+	
+	stack := OOStack new.
+	
+	
+	self pushThisItems: aCollectionOfTwoRandomNames intoThisStack: stack.
+	
+	result := finder find: 'Greta' in: stack.
+	
+	self assert: result isEmpty. ! !
+
+!SentenceFinderByPrefixTest methodsFor: 'testing' stamp: 'RD 10/13/2022 18:30:34'!
+test04SearchingAPrefixDoesNotChangeTheOriginalStack
+	| stack| 
+	
+	stack := OOStack new.
+	
+	
+	self pushThisItems: aCollectionOfTwoRandomNames intoThisStack: stack.
+	
+	finder find: 'Greta' in: stack.
+	
+	self assert: 'Steven' = stack pop.
+	self assert: 'Mary' = stack pop.
+	self assert: stack isEmpty.! !
+
+!SentenceFinderByPrefixTest methodsFor: 'testing' stamp: 'RD 10/13/2022 18:21:41'!
+test05SearchingInAStackShouldReturnACollectionWithMultipleSentences
+	| stack result| 
+	stack := OOStack new.
+	
+	self pushThisItems: aCollectionOfNamesSimilarToGreta intoThisStack: stack.
+	
+	stack push: 'hola greta'.
+	
+	result := finder find: 'Greta' in: stack.
+	
+	self deny: result isEmpty. 
+	self assert: 4 equals: (result size). ! !
+
+!SentenceFinderByPrefixTest methodsFor: 'testing' stamp: 'RD 10/13/2022 18:24:33'!
+test06SentenceFinderByPrefixIsCaseSensitive
+	| stack result| 
+	stack := OOStack new.
+
+	self pushThisItems: aCollectionOfNamesSimilarToGreta intoThisStack: stack.
+	
+	stack push: 'gretaThumberg'.
+	stack push: 'gretaLinda'.
+	
+	result := finder find: 'greta' in: stack.
+	
+	self deny: result isEmpty. 
+	self assert: 2 equals: (result size). ! !
+
+!SentenceFinderByPrefixTest methodsFor: 'testing' stamp: 'RD 10/13/2022 18:09:11'!
+test07PrefixCanNotBeAnEmptyString
+	| stack| 
+	
+	stack := OOStack new.
+	stack push: 'Greta'.
+	stack push: 'GretaLinda'.
+
+	self blockToFail: [finder find: '' in: stack] assertError: 
+	[ :anError | self assert: SentenceFinderByPrefix sentenceFinderPrefixCantBeEmpty equals: anError messageText ].! !
+
+!SentenceFinderByPrefixTest methodsFor: 'testing' stamp: 'RD 10/13/2022 18:09:24'!
+test08PrefixCanNotHaveEmptySpaces
+	| stack | 
+	
+	stack := OOStack new.
+	stack push: 'Greta'.
+	stack push: 'GretaLinda'.
+	
+	self blockToFail: [finder find: 'Grata jaja' in: stack] 
+	assertError: [ :anError | self assert: SentenceFinderByPrefix sentenceFinderPrefixCantHaveEmptySpacesErrorDescription equals: anError messageText ].! !
+
+
+!SentenceFinderByPrefixTest methodsFor: 'assertions' stamp: 'RD 10/13/2022 18:09:48'!
+blockToFail: aBlockThatIsGonnaFail assertError: aBlockThatAssertsTheError
+	self 
+		should: aBlockThatIsGonnaFail 
+		raise: Error
+		withExceptionDo: aBlockThatAssertsTheError.! !
+
+
+!SentenceFinderByPrefixTest methodsFor: 'private' stamp: 'RD 10/13/2022 18:22:51'!
+pushThisItems: aCollection intoThisStack: aStack
+	aCollection do: [:anElement| aStack push: anElement].! !
+
 
 !classDefinition: #OOStack category: 'Stack-Exercise'!
 Object subclass: #OOStack
-	instanceVariableNames: 'stack elements firstItemIndex top size'
+	instanceVariableNames: 'top size'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
@@ -234,6 +323,62 @@ Object subclass: #SentenceFinderByPrefix
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'Stack-Exercise'!
+
+!SentenceFinderByPrefix methodsFor: 'operating' stamp: 'RD 10/13/2022 11:49:53'!
+find: aString in: anOOStack 
+	| auxiliarStack  poppedSentence listOfSentencesFoundedByPrefix |
+
+	self checkPrefix: aString.
+	listOfSentencesFoundedByPrefix := OrderedCollection new.
+	auxiliarStack := OOStack new.
+	
+	self evaluateClosure: [ poppedSentence := anOOStack pop. 
+		auxiliarStack push: poppedSentence. 
+		(self isPrefix: aString within: poppedSentence) ifTrue: [listOfSentencesFoundedByPrefix add: poppedSentence]] whileStackIsNotEmpty: anOOStack.
+
+	self evaluateClosure:  [anOOStack push: auxiliarStack pop] whileStackIsNotEmpty: auxiliarStack.
+	^listOfSentencesFoundedByPrefix.
+	
+	! !
+
+
+!SentenceFinderByPrefix methodsFor: 'private' stamp: 'RD 10/13/2022 11:36:39'!
+aStringhasEmptySpaces: aString
+	^self isPrefix: ' ' within: aString.
+
+
+
+! !
+
+!SentenceFinderByPrefix methodsFor: 'private' stamp: 'RD 10/13/2022 11:49:21'!
+checkPrefix: aString
+	aString isEmpty ifTrue: [self error: self class sentenceFinderPrefixCantBeEmpty].
+	(self aStringhasEmptySpaces: aString) ifTrue: [self error: self class sentenceFinderPrefixCantHaveEmptySpacesErrorDescription].! !
+
+!SentenceFinderByPrefix methodsFor: 'private' stamp: 'RD 10/13/2022 10:08:31'!
+evaluateClosure: aClosureToEvaluate whileStackIsNotEmpty: anStack
+	 [anStack isEmpty] whileFalse: aClosureToEvaluate.! !
+
+!SentenceFinderByPrefix methodsFor: 'private' stamp: 'RD 10/13/2022 11:41:56'!
+isPrefix: aPrefix within: aSentence
+	| indexOfPrefixInSentence |
+	
+	indexOfPrefixInSentence := aSentence findString: aPrefix startingAt: 1. 
+	^indexOfPrefixInSentence ~= 0! !
+
+"-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
+
+!classDefinition: 'SentenceFinderByPrefix class' category: 'Stack-Exercise'!
+SentenceFinderByPrefix class
+	instanceVariableNames: ''!
+
+!SentenceFinderByPrefix class methodsFor: 'errorsMessages' stamp: 'RD 10/13/2022 11:30:10'!
+sentenceFinderPrefixCantBeEmpty
+	^'The prefix should not be empty'! !
+
+!SentenceFinderByPrefix class methodsFor: 'errorsMessages' stamp: 'RD 10/13/2022 11:31:51'!
+sentenceFinderPrefixCantHaveEmptySpacesErrorDescription
+	^'The prefix cant have empty spaces'! !
 
 
 !classDefinition: #StackNode category: 'Stack-Exercise'!
